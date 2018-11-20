@@ -6,7 +6,7 @@
 #
 Name     : kguiaddons
 Version  : 5.52.0
-Release  : 7
+Release  : 8
 URL      : https://download.kde.org/stable/frameworks/5.52/kguiaddons-5.52.0.tar.xz
 Source0  : https://download.kde.org/stable/frameworks/5.52/kguiaddons-5.52.0.tar.xz
 Source99 : https://download.kde.org/stable/frameworks/5.52/kguiaddons-5.52.0.tar.xz.sig
@@ -27,14 +27,6 @@ Utilities for graphical user interfaces
 ## Introduction
 The KDE GUI addons provide utilities for graphical user interfaces in the areas
 of colors, fonts, text, images, keyboard input.
-
-%package abi
-Summary: abi components for the kguiaddons package.
-Group: Default
-
-%description abi
-abi components for the kguiaddons package.
-
 
 %package dev
 Summary: dev components for the kguiaddons package.
@@ -71,7 +63,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1541867870
+export SOURCE_DATE_EPOCH=1542741292
 mkdir -p clr-build
 pushd clr-build
 %cmake ..
@@ -79,7 +71,7 @@ make  %{?_smp_mflags} VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1541867870
+export SOURCE_DATE_EPOCH=1542741292
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kguiaddons
 cp COPYING %{buildroot}/usr/share/package-licenses/kguiaddons/COPYING
@@ -90,10 +82,6 @@ popd
 
 %files
 %defattr(-,root,root,-)
-
-%files abi
-%defattr(-,root,root,-)
-/usr/share/abi/libKF5GuiAddons.so.5.52.0.abi
 
 %files dev
 %defattr(-,root,root,-)
