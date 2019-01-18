@@ -6,7 +6,7 @@
 #
 Name     : kguiaddons
 Version  : 5.54.0
-Release  : 11
+Release  : 12
 URL      : https://download.kde.org/stable/frameworks/5.54/kguiaddons-5.54.0.tar.xz
 Source0  : https://download.kde.org/stable/frameworks/5.54/kguiaddons-5.54.0.tar.xz
 Source99 : https://download.kde.org/stable/frameworks/5.54/kguiaddons-5.54.0.tar.xz.sig
