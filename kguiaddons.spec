@@ -5,14 +5,15 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kguiaddons
-Version  : 5.71.0
-Release  : 32
-URL      : https://download.kde.org/stable/frameworks/5.71/kguiaddons-5.71.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.71/kguiaddons-5.71.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.71/kguiaddons-5.71.0.tar.xz.sig
+Version  : 5.73.0
+Release  : 33
+URL      : https://download.kde.org/stable/frameworks/5.73/kguiaddons-5.73.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.73/kguiaddons-5.73.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.73/kguiaddons-5.73.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0 GPL-3.0 LGPL-2.1 LGPL-3.0
+Requires: kguiaddons-data = %{version}-%{release}
 Requires: kguiaddons-lib = %{version}-%{release}
 Requires: kguiaddons-license = %{version}-%{release}
 BuildRequires : buildreq-cmake
@@ -31,10 +32,19 @@ Utilities for graphical user interfaces
 The KDE GUI addons provide utilities for graphical user interfaces in the areas
 of colors, fonts, text, images, keyboard input.
 
+%package data
+Summary: data components for the kguiaddons package.
+Group: Data
+
+%description data
+data components for the kguiaddons package.
+
+
 %package dev
 Summary: dev components for the kguiaddons package.
 Group: Development
 Requires: kguiaddons-lib = %{version}-%{release}
+Requires: kguiaddons-data = %{version}-%{release}
 Provides: kguiaddons-devel = %{version}-%{release}
 Requires: kguiaddons = %{version}-%{release}
 
@@ -45,6 +55,7 @@ dev components for the kguiaddons package.
 %package lib
 Summary: lib components for the kguiaddons package.
 Group: Libraries
+Requires: kguiaddons-data = %{version}-%{release}
 Requires: kguiaddons-license = %{version}-%{release}
 
 %description lib
@@ -60,15 +71,15 @@ license components for the kguiaddons package.
 
 
 %prep
-%setup -q -n kguiaddons-5.71.0
-cd %{_builddir}/kguiaddons-5.71.0
+%setup -q -n kguiaddons-5.73.0
+cd %{_builddir}/kguiaddons-5.73.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1592244989
+export SOURCE_DATE_EPOCH=1597696827
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -80,17 +91,17 @@ export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 %cmake ..
-make  %{?_smp_mflags}  VERBOSE=1
+make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1592244989
+export SOURCE_DATE_EPOCH=1597696827
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kguiaddons
-cp %{_builddir}/kguiaddons-5.71.0/COPYING %{buildroot}/usr/share/package-licenses/kguiaddons/7c203dee3a03037da436df03c4b25b659c073976
-cp %{_builddir}/kguiaddons-5.71.0/COPYING.LIB %{buildroot}/usr/share/package-licenses/kguiaddons/9a1929f4700d2407c70b507b3b2aaf6226a9543c
-cp %{_builddir}/kguiaddons-5.71.0/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/kguiaddons/7d9831e05094ce723947d729c2a46a09d6e90275
-cp %{_builddir}/kguiaddons-5.71.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/kguiaddons/e458941548e0864907e654fa2e192844ae90fc32
+cp %{_builddir}/kguiaddons-5.73.0/COPYING %{buildroot}/usr/share/package-licenses/kguiaddons/7c203dee3a03037da436df03c4b25b659c073976
+cp %{_builddir}/kguiaddons-5.73.0/COPYING.LIB %{buildroot}/usr/share/package-licenses/kguiaddons/9a1929f4700d2407c70b507b3b2aaf6226a9543c
+cp %{_builddir}/kguiaddons-5.73.0/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/kguiaddons/7d9831e05094ce723947d729c2a46a09d6e90275
+cp %{_builddir}/kguiaddons-5.73.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/kguiaddons/e458941548e0864907e654fa2e192844ae90fc32
 pushd clr-build
 %make_install
 popd
@@ -98,11 +109,16 @@ popd
 %files
 %defattr(-,root,root,-)
 
+%files data
+%defattr(-,root,root,-)
+/usr/share/qlogging-categories5/kguiaddons.categories
+
 %files dev
 %defattr(-,root,root,-)
 /usr/include/KF5/KGuiAddons/KColorCollection
 /usr/include/KF5/KGuiAddons/KColorMimeData
 /usr/include/KF5/KGuiAddons/KColorUtils
+/usr/include/KF5/KGuiAddons/KCursorSaver
 /usr/include/KF5/KGuiAddons/KDateValidator
 /usr/include/KF5/KGuiAddons/KFontUtils
 /usr/include/KF5/KGuiAddons/KIconUtils
@@ -112,6 +128,7 @@ popd
 /usr/include/KF5/KGuiAddons/kcolorcollection.h
 /usr/include/KF5/KGuiAddons/kcolormimedata.h
 /usr/include/KF5/KGuiAddons/kcolorutils.h
+/usr/include/KF5/KGuiAddons/kcursorsaver.h
 /usr/include/KF5/KGuiAddons/kdatevalidator.h
 /usr/include/KF5/KGuiAddons/kfontutils.h
 /usr/include/KF5/KGuiAddons/kguiaddons_export.h
@@ -132,7 +149,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5GuiAddons.so.5
-/usr/lib64/libKF5GuiAddons.so.5.71.0
+/usr/lib64/libKF5GuiAddons.so.5.73.0
 /usr/lib64/qt5/plugins/kf5/kguiaddons/kmodifierkey/kmodifierkey_xcb.so
 
 %files license
