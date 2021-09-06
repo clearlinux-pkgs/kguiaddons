@@ -15,6 +15,10 @@ libKF5GuiAddons.so.5:_ZN11KColorUtils6darkenERK6QColordd
 libKF5GuiAddons.so.5:_ZN11KColorUtils6getHcyERK6QColorPdS3_S3_S3_
 libKF5GuiAddons.so.5:_ZN11KColorUtils7lightenERK6QColordd
 libKF5GuiAddons.so.5:_ZN11KColorUtils8hcyColorEdddd
+libKF5GuiAddons.so.5:_ZN11KUrlHandler11qt_metacallEN11QMetaObject4CallEiPPv
+libKF5GuiAddons.so.5:_ZN11KUrlHandler11qt_metacastEPKc
+libKF5GuiAddons.so.5:_ZN11KUrlHandlerC1EP7QObject
+libKF5GuiAddons.so.5:_ZN11KUrlHandlerC2EP7QObject
 libKF5GuiAddons.so.5:_ZN12KCursorSaver13restoreCursorEv
 libKF5GuiAddons.so.5:_ZN12KCursorSaverC1EN2Qt11CursorShapeE
 libKF5GuiAddons.so.5:_ZN12KCursorSaverC1EOS_
@@ -113,6 +117,9 @@ libKF5GuiAddons.so.5:_ZN9KWordWrapC2ERKS_
 libKF5GuiAddons.so.5:_ZN9KWordWrapD1Ev
 libKF5GuiAddons.so.5:_ZN9KWordWrapD2Ev
 libKF5GuiAddons.so.5:_ZN9KWordWrapaSERKS_
+libKF5GuiAddons.so.5:_ZNK11KUrlHandler10metaObjectEv
+libKF5GuiAddons.so.5:_ZNK11KUrlHandler13concatDocsUrlERK4QUrl
+libKF5GuiAddons.so.5:_ZNK11KUrlHandler8openHelpERK4QUrl
 libKF5GuiAddons.so.5:_ZNK14KDateValidator10metaObjectEv
 libKF5GuiAddons.so.5:_ZNK14KDateValidator4dateERK7QStringR5QDate
 libKF5GuiAddons.so.5:_ZNK14KDateValidator5fixupER7QString
