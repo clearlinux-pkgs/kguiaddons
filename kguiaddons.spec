@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kguiaddons
-Version  : 5.89.0
-Release  : 48
-URL      : https://download.kde.org/stable/frameworks/5.89/kguiaddons-5.89.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.89/kguiaddons-5.89.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.89/kguiaddons-5.89.0.tar.xz.sig
+Version  : 5.90.0
+Release  : 49
+URL      : https://download.kde.org/stable/frameworks/5.90/kguiaddons-5.90.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.90/kguiaddons-5.90.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.90/kguiaddons-5.90.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : CC0-1.0 GPL-2.0 GPL-3.0 LGPL-2.0 LGPL-2.1 LGPL-3.0
@@ -23,9 +23,6 @@ BuildRequires : extra-cmake-modules pkgconfig(xcb) xcb-util-cursor-dev xcb-util-
 BuildRequires : extra-cmake-modules qtwayland-dev
 BuildRequires : extra-cmake-modules-data
 BuildRequires : libX11-dev libICE-dev libSM-dev libXau-dev libXcomposite-dev libXcursor-dev libXdamage-dev libXdmcp-dev libXext-dev libXfixes-dev libXft-dev libXi-dev libXinerama-dev libXi-dev libXmu-dev libXpm-dev libXrandr-dev libXrender-dev libXres-dev libXScrnSaver-dev libXt-dev libXtst-dev libXv-dev libXxf86vm-dev
-BuildRequires : qtbase-dev
-BuildRequires : qtbase-dev mesa-dev
-BuildRequires : qtwayland-dev
 BuildRequires : qtx11extras-dev
 
 %description
@@ -70,15 +67,15 @@ license components for the kguiaddons package.
 
 
 %prep
-%setup -q -n kguiaddons-5.89.0
-cd %{_builddir}/kguiaddons-5.89.0
+%setup -q -n kguiaddons-5.90.0
+cd %{_builddir}/kguiaddons-5.90.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1639688003
+export SOURCE_DATE_EPOCH=1641967979
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -94,21 +91,21 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1639688003
+export SOURCE_DATE_EPOCH=1641967979
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kguiaddons
-cp %{_builddir}/kguiaddons-5.89.0/LICENSES/CC0-1.0.txt %{buildroot}/usr/share/package-licenses/kguiaddons/82da472f6d00dc5f0a651f33ebb320aa9c7b08d0
-cp %{_builddir}/kguiaddons-5.89.0/LICENSES/GPL-2.0-only.txt %{buildroot}/usr/share/package-licenses/kguiaddons/2a638514c87c4923c0570c55822620fad56f2a33
-cp %{_builddir}/kguiaddons-5.89.0/LICENSES/GPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/kguiaddons/e712eadfab0d2357c0f50f599ef35ee0d87534cb
-cp %{_builddir}/kguiaddons-5.89.0/LICENSES/GPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/kguiaddons/6091db0aead0d90182b93d3c0d09ba93d188f907
-cp %{_builddir}/kguiaddons-5.89.0/LICENSES/LGPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/kguiaddons/20079e8f79713dce80ab09774505773c926afa2a
-cp %{_builddir}/kguiaddons-5.89.0/LICENSES/LGPL-2.1-only.txt %{buildroot}/usr/share/package-licenses/kguiaddons/3c3d7573e137d48253731c975ecf90d74cfa9efe
-cp %{_builddir}/kguiaddons-5.89.0/LICENSES/LGPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/kguiaddons/757b86330df80f81143d5916b3e92b4bcb1b1890
-cp %{_builddir}/kguiaddons-5.89.0/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/kguiaddons/7d9831e05094ce723947d729c2a46a09d6e90275
-cp %{_builddir}/kguiaddons-5.89.0/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/kguiaddons/7d9831e05094ce723947d729c2a46a09d6e90275
-cp %{_builddir}/kguiaddons-5.89.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/kguiaddons/e458941548e0864907e654fa2e192844ae90fc32
-cp %{_builddir}/kguiaddons-5.89.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/kguiaddons/e458941548e0864907e654fa2e192844ae90fc32
-cp %{_builddir}/kguiaddons-5.89.0/README.md.license %{buildroot}/usr/share/package-licenses/kguiaddons/34f19e47876c7baa72ae7cc9acb28d8c2269b098
+cp %{_builddir}/kguiaddons-5.90.0/LICENSES/CC0-1.0.txt %{buildroot}/usr/share/package-licenses/kguiaddons/82da472f6d00dc5f0a651f33ebb320aa9c7b08d0
+cp %{_builddir}/kguiaddons-5.90.0/LICENSES/GPL-2.0-only.txt %{buildroot}/usr/share/package-licenses/kguiaddons/2a638514c87c4923c0570c55822620fad56f2a33
+cp %{_builddir}/kguiaddons-5.90.0/LICENSES/GPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/kguiaddons/e712eadfab0d2357c0f50f599ef35ee0d87534cb
+cp %{_builddir}/kguiaddons-5.90.0/LICENSES/GPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/kguiaddons/6091db0aead0d90182b93d3c0d09ba93d188f907
+cp %{_builddir}/kguiaddons-5.90.0/LICENSES/LGPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/kguiaddons/20079e8f79713dce80ab09774505773c926afa2a
+cp %{_builddir}/kguiaddons-5.90.0/LICENSES/LGPL-2.1-only.txt %{buildroot}/usr/share/package-licenses/kguiaddons/3c3d7573e137d48253731c975ecf90d74cfa9efe
+cp %{_builddir}/kguiaddons-5.90.0/LICENSES/LGPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/kguiaddons/757b86330df80f81143d5916b3e92b4bcb1b1890
+cp %{_builddir}/kguiaddons-5.90.0/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/kguiaddons/7d9831e05094ce723947d729c2a46a09d6e90275
+cp %{_builddir}/kguiaddons-5.90.0/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/kguiaddons/7d9831e05094ce723947d729c2a46a09d6e90275
+cp %{_builddir}/kguiaddons-5.90.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/kguiaddons/e458941548e0864907e654fa2e192844ae90fc32
+cp %{_builddir}/kguiaddons-5.90.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/kguiaddons/e458941548e0864907e654fa2e192844ae90fc32
+cp %{_builddir}/kguiaddons-5.90.0/README.md.license %{buildroot}/usr/share/package-licenses/kguiaddons/34f19e47876c7baa72ae7cc9acb28d8c2269b098
 pushd clr-build
 %make_install
 popd
@@ -160,7 +157,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5GuiAddons.so.5
-/usr/lib64/libKF5GuiAddons.so.5.89.0
+/usr/lib64/libKF5GuiAddons.so.5.90.0
 /usr/lib64/qt5/plugins/kf5/kguiaddons/kmodifierkey/kmodifierkey_xcb.so
 
 %files license
