@@ -1,5 +1,5 @@
 PKG_NAME := kguiaddons
-URL = https://download.kde.org/stable/frameworks/5.96/kguiaddons-5.96.0.tar.xz
+URL = https://download.kde.org/stable/frameworks/5.97/kguiaddons-5.97.0.tar.xz
 ARCHIVES = 
 
 include ../common/Makefile.common
