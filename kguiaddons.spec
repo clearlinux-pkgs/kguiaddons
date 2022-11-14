@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kguiaddons
-Version  : 5.99.0
-Release  : 58
-URL      : https://download.kde.org/stable/frameworks/5.99/kguiaddons-5.99.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.99/kguiaddons-5.99.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.99/kguiaddons-5.99.0.tar.xz.sig
+Version  : 5.100.0
+Release  : 59
+URL      : https://download.kde.org/stable/frameworks/5.100/kguiaddons-5.100.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.100/kguiaddons-5.100.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.100/kguiaddons-5.100.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-2-Clause CC0-1.0 GPL-2.0 GPL-3.0 LGPL-2.0 LGPL-2.1 LGPL-3.0
@@ -80,15 +80,15 @@ license components for the kguiaddons package.
 
 
 %prep
-%setup -q -n kguiaddons-5.99.0
-cd %{_builddir}/kguiaddons-5.99.0
+%setup -q -n kguiaddons-5.100.0
+cd %{_builddir}/kguiaddons-5.100.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1665417913
+export SOURCE_DATE_EPOCH=1668444695
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -104,7 +104,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1665417913
+export SOURCE_DATE_EPOCH=1668444695
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kguiaddons
 cp %{_builddir}/kguiaddons-%{version}/LICENSES/BSD-2-Clause.txt %{buildroot}/usr/share/package-licenses/kguiaddons/07c1ab270255cf247438e2358ff0c18835b6a6ce || :
@@ -147,6 +147,7 @@ popd
 %defattr(-,root,root,-)
 /usr/include/KF5/KGuiAddons/KColorCollection
 /usr/include/KF5/KGuiAddons/KColorMimeData
+/usr/include/KF5/KGuiAddons/KColorSchemeWatcher
 /usr/include/KF5/KGuiAddons/KColorUtils
 /usr/include/KF5/KGuiAddons/KCursorSaver
 /usr/include/KF5/KGuiAddons/KDateValidator
@@ -159,6 +160,7 @@ popd
 /usr/include/KF5/KGuiAddons/KeySequenceRecorder
 /usr/include/KF5/KGuiAddons/kcolorcollection.h
 /usr/include/KF5/KGuiAddons/kcolormimedata.h
+/usr/include/KF5/KGuiAddons/kcolorschemewatcher.h
 /usr/include/KF5/KGuiAddons/kcolorutils.h
 /usr/include/KF5/KGuiAddons/kcursorsaver.h
 /usr/include/KF5/KGuiAddons/kdatevalidator.h
@@ -183,7 +185,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5GuiAddons.so.5
-/usr/lib64/libKF5GuiAddons.so.5.99.0
+/usr/lib64/libKF5GuiAddons.so.5.100.0
 
 %files license
 %defattr(0644,root,root,0755)
