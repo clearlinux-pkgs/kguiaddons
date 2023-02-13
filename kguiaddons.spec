@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kguiaddons
-Version  : 5.102.0
-Release  : 61
-URL      : https://download.kde.org/stable/frameworks/5.102/kguiaddons-5.102.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.102/kguiaddons-5.102.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.102/kguiaddons-5.102.0.tar.xz.sig
+Version  : 5.103.0
+Release  : 62
+URL      : https://download.kde.org/stable/frameworks/5.103/kguiaddons-5.103.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.103/kguiaddons-5.103.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.103/kguiaddons-5.103.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-2-Clause CC0-1.0 GPL-2.0 GPL-3.0 LGPL-2.0 LGPL-2.1 LGPL-3.0
@@ -83,15 +83,15 @@ license components for the kguiaddons package.
 
 
 %prep
-%setup -q -n kguiaddons-5.102.0
-cd %{_builddir}/kguiaddons-5.102.0
+%setup -q -n kguiaddons-5.103.0
+cd %{_builddir}/kguiaddons-5.103.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1673892273
+export SOURCE_DATE_EPOCH=1676308663
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -107,7 +107,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1673892273
+export SOURCE_DATE_EPOCH=1676308663
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kguiaddons
 cp %{_builddir}/kguiaddons-%{version}/LICENSES/BSD-2-Clause.txt %{buildroot}/usr/share/package-licenses/kguiaddons/07c1ab270255cf247438e2358ff0c18835b6a6ce || :
@@ -188,7 +188,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5GuiAddons.so.5
-/usr/lib64/libKF5GuiAddons.so.5.102.0
+/usr/lib64/libKF5GuiAddons.so.5.103.0
 
 %files license
 %defattr(0644,root,root,0755)
