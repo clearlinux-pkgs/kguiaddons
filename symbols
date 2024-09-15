@@ -1,203 +1,49 @@
-libKF6GuiAddons.so.6:KFontUtils::adaptFontSize(QPainter&, QString const&, QSizeF const&, double, double, QFlags<KFontUtils::AdaptFontSizeOption>)
-libKF6GuiAddons.so.6:KFontUtils::adaptFontSize(QPainter&, QString const&, double, double, double, double, QFlags<KFontUtils::AdaptFontSizeOption>)
-libKF6GuiAddons.so.6:KIconUtils::addOverlay(QIcon const&, QIcon const&, Qt::Corner)
-libKF6GuiAddons.so.6:KIconUtils::addOverlays(QIcon const&, QHash<Qt::Corner, QIcon> const&)
-libKF6GuiAddons.so.6:KIconUtils::addOverlays(QIcon const&, QList<QString> const&)
-libKF6GuiAddons.so.6:KIconUtils::addOverlays(QString const&, QList<QString> const&)
-libKF6GuiAddons.so.6:KColorUtils::contrastRatio(QColor const&, QColor const&)
-libKF6GuiAddons.so.6:KColorUtils::overlayColors(QColor const&, QColor const&, QPainter::CompositionMode)
-libKF6GuiAddons.so.6:KColorUtils::hue(QColor const&)
-libKF6GuiAddons.so.6:KColorUtils::mix(QColor const&, QColor const&, double)
-libKF6GuiAddons.so.6:KColorUtils::luma(QColor const&)
-libKF6GuiAddons.so.6:KColorUtils::tint(QColor const&, QColor const&, double)
-libKF6GuiAddons.so.6:KColorUtils::shade(QColor const&, double, double)
-libKF6GuiAddons.so.6:KColorUtils::chroma(QColor const&)
-libKF6GuiAddons.so.6:KColorUtils::darken(QColor const&, double, double)
-libKF6GuiAddons.so.6:KColorUtils::getHcy(QColor const&, double*, double*, double*, double*)
-libKF6GuiAddons.so.6:KColorUtils::lighten(QColor const&, double, double)
-libKF6GuiAddons.so.6:KColorUtils::hcyColor(double, double, double, double)
-libKF6GuiAddons.so.6:KJobWindows::window(QObject*)
-libKF6GuiAddons.so.6:KJobWindows::setWindow(QObject*, QWindow*)
-libKF6GuiAddons.so.6:KUrlHandler::qt_metacall(QMetaObject::Call, int, void**)
-libKF6GuiAddons.so.6:KUrlHandler::qt_metacast(char const*)
-libKF6GuiAddons.so.6:KUrlHandler::KUrlHandler(QObject*)
-libKF6GuiAddons.so.6:KUrlHandler::KUrlHandler(QObject*)
-libKF6GuiAddons.so.6:KCursorSaver::restoreCursor()
-libKF6GuiAddons.so.6:KCursorSaver::KCursorSaver(Qt::CursorShape)
-libKF6GuiAddons.so.6:KCursorSaver::KCursorSaver(KCursorSaver&&)
-libKF6GuiAddons.so.6:KCursorSaver::KCursorSaver(Qt::CursorShape)
-libKF6GuiAddons.so.6:KCursorSaver::KCursorSaver(KCursorSaver&&)
-libKF6GuiAddons.so.6:KCursorSaver::~KCursorSaver()
-libKF6GuiAddons.so.6:KCursorSaver::~KCursorSaver()
-libKF6GuiAddons.so.6:KCursorSaver::operator=(KCursorSaver&&)
-libKF6GuiAddons.so.6:KColorMimeData::createDrag(QColor const&, QObject*)
-libKF6GuiAddons.so.6:KColorMimeData::fromMimeData(QMimeData const*)
-libKF6GuiAddons.so.6:KColorMimeData::populateMimeData(QMimeData*, QColor const&)
-libKF6GuiAddons.so.6:KColorMimeData::canDecode(QMimeData const*)
-libKF6GuiAddons.so.6:KDateValidator::qt_metacall(QMetaObject::Call, int, void**)
-libKF6GuiAddons.so.6:KDateValidator::qt_metacast(char const*)
-libKF6GuiAddons.so.6:KDateValidator::KDateValidator(QObject*)
-libKF6GuiAddons.so.6:KDateValidator::KDateValidator(QObject*)
-libKF6GuiAddons.so.6:KDateValidator::~KDateValidator()
-libKF6GuiAddons.so.6:KDateValidator::~KDateValidator()
-libKF6GuiAddons.so.6:KDateValidator::~KDateValidator()
-libKF6GuiAddons.so.6:KColorCollection::changeColor(QColor const&, QColor const&, QString const&)
-libKF6GuiAddons.so.6:KColorCollection::changeColor(int, QColor const&, QString const&)
-libKF6GuiAddons.so.6:KColorCollection::setEditable(KColorCollection::Editable)
-libKF6GuiAddons.so.6:KColorCollection::setDescription(QString const&)
 libKF6GuiAddons.so.6:KColorCollection::installedCollections()
 libKF6GuiAddons.so.6:KColorCollection::save()
-libKF6GuiAddons.so.6:KColorCollection::setName(QString const&)
-libKF6GuiAddons.so.6:KColorCollection::addColor(QColor const&, QString const&)
-libKF6GuiAddons.so.6:KColorCollection::KColorCollection(QString const&)
-libKF6GuiAddons.so.6:KColorCollection::KColorCollection(KColorCollection const&)
-libKF6GuiAddons.so.6:KColorCollection::KColorCollection(QString const&)
-libKF6GuiAddons.so.6:KColorCollection::KColorCollection(KColorCollection const&)
+libKF6GuiAddons.so.6:KColorCollection::setEditable(KColorCollection::Editable)
 libKF6GuiAddons.so.6:KColorCollection::~KColorCollection()
-libKF6GuiAddons.so.6:KColorCollection::~KColorCollection()
-libKF6GuiAddons.so.6:KColorCollection::operator=(KColorCollection const&)
-libKF6GuiAddons.so.6:KModifierKeyInfo::keyLatched(Qt::Key, bool)
-libKF6GuiAddons.so.6:KModifierKeyInfo::keyPressed(Qt::Key, bool)
-libKF6GuiAddons.so.6:KModifierKeyInfo::keyRemoved(Qt::Key)
-libKF6GuiAddons.so.6:KModifierKeyInfo::qt_metacall(QMetaObject::Call, int, void**)
-libKF6GuiAddons.so.6:KModifierKeyInfo::qt_metacast(char const*)
-libKF6GuiAddons.so.6:KModifierKeyInfo::setKeyLocked(Qt::Key, bool)
-libKF6GuiAddons.so.6:KModifierKeyInfo::buttonPressed(Qt::MouseButton, bool)
-libKF6GuiAddons.so.6:KModifierKeyInfo::setKeyLatched(Qt::Key, bool)
-libKF6GuiAddons.so.6:KModifierKeyInfo::keyAdded(Qt::Key)
-libKF6GuiAddons.so.6:KModifierKeyInfo::keyLocked(Qt::Key, bool)
-libKF6GuiAddons.so.6:KModifierKeyInfo::KModifierKeyInfo(QObject*)
-libKF6GuiAddons.so.6:KModifierKeyInfo::KModifierKeyInfo(QObject*)
-libKF6GuiAddons.so.6:KModifierKeyInfo::~KModifierKeyInfo()
-libKF6GuiAddons.so.6:KModifierKeyInfo::~KModifierKeyInfo()
-libKF6GuiAddons.so.6:KModifierKeyInfo::~KModifierKeyInfo()
-libKF6GuiAddons.so.6:KSystemClipboard::qt_metacall(QMetaObject::Call, int, void**)
-libKF6GuiAddons.so.6:KSystemClipboard::qt_metacast(char const*)
-libKF6GuiAddons.so.6:KSystemClipboard::text(QClipboard::Mode)
-libKF6GuiAddons.so.6:KSystemClipboard::changed(QClipboard::Mode)
-libKF6GuiAddons.so.6:KSystemClipboard::instance()
-libKF6GuiAddons.so.6:KSystemClipboard::KSystemClipboard(QObject*)
-libKF6GuiAddons.so.6:KSystemClipboard::KSystemClipboard(QObject*)
-libKF6GuiAddons.so.6:KColorSchemeWatcher::qt_metacall(QMetaObject::Call, int, void**)
-libKF6GuiAddons.so.6:KColorSchemeWatcher::qt_metacast(char const*)
+libKF6GuiAddons.so.6:KColorSchemeWatcher::KColorSchemeWatcher(QObject*)
 libKF6GuiAddons.so.6:KColorSchemeWatcher::systemPreferenceChanged()
-libKF6GuiAddons.so.6:KColorSchemeWatcher::KColorSchemeWatcher(QObject*)
-libKF6GuiAddons.so.6:KColorSchemeWatcher::KColorSchemeWatcher(QObject*)
 libKF6GuiAddons.so.6:KColorSchemeWatcher::~KColorSchemeWatcher()
-libKF6GuiAddons.so.6:KColorSchemeWatcher::~KColorSchemeWatcher()
-libKF6GuiAddons.so.6:KColorSchemeWatcher::~KColorSchemeWatcher()
-libKF6GuiAddons.so.6:KKeySequenceRecorder::qt_metacall(QMetaObject::Call, int, void**)
-libKF6GuiAddons.so.6:KKeySequenceRecorder::qt_metacast(char const*)
-libKF6GuiAddons.so.6:KKeySequenceRecorder::windowChanged()
-libKF6GuiAddons.so.6:KKeySequenceRecorder::gotKeySequence(QKeySequence const&)
-libKF6GuiAddons.so.6:KKeySequenceRecorder::startRecording()
+libKF6GuiAddons.so.6:KCountryFlagEmojiIconEngine::isNull()
+libKF6GuiAddons.so.6:KCountryFlagEmojiIconEngine::~KCountryFlagEmojiIconEngine()
+libKF6GuiAddons.so.6:KCursorSaver::KCursorSaver(KCursorSaver&&)
+libKF6GuiAddons.so.6:KCursorSaver::KCursorSaver(Qt::CursorShape)
+libKF6GuiAddons.so.6:KCursorSaver::operator=(KCursorSaver&&)
+libKF6GuiAddons.so.6:KCursorSaver::restoreCursor()
+libKF6GuiAddons.so.6:KCursorSaver::~KCursorSaver()
+libKF6GuiAddons.so.6:KDateValidator::KDateValidator(QObject*)
+libKF6GuiAddons.so.6:KDateValidator::~KDateValidator()
+libKF6GuiAddons.so.6:KJobWindows::window(QObject*)
 libKF6GuiAddons.so.6:KKeySequenceRecorder::cancelRecording()
-libKF6GuiAddons.so.6:KKeySequenceRecorder::recordingChanged()
-libKF6GuiAddons.so.6:KKeySequenceRecorder::setCurrentKeySequence(QKeySequence const&)
-libKF6GuiAddons.so.6:KKeySequenceRecorder::setModifierOnlyAllowed(bool)
-libKF6GuiAddons.so.6:KKeySequenceRecorder::setModifierlessAllowed(bool)
 libKF6GuiAddons.so.6:KKeySequenceRecorder::currentKeySequenceChanged()
 libKF6GuiAddons.so.6:KKeySequenceRecorder::modifierOnlyAllowedChanged()
 libKF6GuiAddons.so.6:KKeySequenceRecorder::modifierlessAllowedChanged()
-libKF6GuiAddons.so.6:KKeySequenceRecorder::setMultiKeyShortcutsAllowed(bool)
 libKF6GuiAddons.so.6:KKeySequenceRecorder::multiKeyShortcutsAllowedChanged()
+libKF6GuiAddons.so.6:KKeySequenceRecorder::recordingChanged()
+libKF6GuiAddons.so.6:KKeySequenceRecorder::setModifierOnlyAllowed(bool)
+libKF6GuiAddons.so.6:KKeySequenceRecorder::setModifierlessAllowed(bool)
+libKF6GuiAddons.so.6:KKeySequenceRecorder::setMultiKeyShortcutsAllowed(bool)
 libKF6GuiAddons.so.6:KKeySequenceRecorder::setWindow(QWindow*)
-libKF6GuiAddons.so.6:KKeySequenceRecorder::KKeySequenceRecorder(QWindow*, QObject*)
-libKF6GuiAddons.so.6:KKeySequenceRecorder::KKeySequenceRecorder(QWindow*, QObject*)
+libKF6GuiAddons.so.6:KKeySequenceRecorder::startRecording()
+libKF6GuiAddons.so.6:KKeySequenceRecorder::windowChanged()
 libKF6GuiAddons.so.6:KKeySequenceRecorder::~KKeySequenceRecorder()
-libKF6GuiAddons.so.6:KKeySequenceRecorder::~KKeySequenceRecorder()
-libKF6GuiAddons.so.6:KKeySequenceRecorder::~KKeySequenceRecorder()
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::keyLatched(Qt::Key, bool)
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::keyPressed(Qt::Key, bool)
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::keyRemoved(Qt::Key)
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::qt_metacall(QMetaObject::Call, int, void**)
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::qt_metacast(char const*)
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::setKeyLocked(Qt::Key, bool)
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::stateUpdated(Qt::Key, QFlags<KModifierKeyInfoProvider::ModifierState>)
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::buttonPressed(Qt::MouseButton, bool)
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::setKeyLatched(Qt::Key, bool)
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::keyAdded(Qt::Key)
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::keyLocked(Qt::Key, bool)
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::KModifierKeyInfoProvider()
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::KModifierKeyInfoProvider()
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::~KModifierKeyInfoProvider()
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::~KModifierKeyInfoProvider()
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::~KModifierKeyInfoProvider()
-libKF6GuiAddons.so.6:KCountryFlagEmojiIconEngine::scaledPixmap(QSize const&, QIcon::Mode, QIcon::State, double)
-libKF6GuiAddons.so.6:KCountryFlagEmojiIconEngine::setGlobalDefaultFont(QFont const&)
-libKF6GuiAddons.so.6:KCountryFlagEmojiIconEngine::paint(QPainter*, QRect const&, QIcon::Mode, QIcon::State)
-libKF6GuiAddons.so.6:KCountryFlagEmojiIconEngine::isNull()
-libKF6GuiAddons.so.6:KCountryFlagEmojiIconEngine::pixmap(QSize const&, QIcon::Mode, QIcon::State)
-libKF6GuiAddons.so.6:KCountryFlagEmojiIconEngine::KCountryFlagEmojiIconEngine(QString const&)
-libKF6GuiAddons.so.6:KCountryFlagEmojiIconEngine::KCountryFlagEmojiIconEngine(QString const&)
-libKF6GuiAddons.so.6:KCountryFlagEmojiIconEngine::~KCountryFlagEmojiIconEngine()
-libKF6GuiAddons.so.6:KCountryFlagEmojiIconEngine::~KCountryFlagEmojiIconEngine()
-libKF6GuiAddons.so.6:KCountryFlagEmojiIconEngine::~KCountryFlagEmojiIconEngine()
 libKF6GuiAddons.so.6:KLocalImageCacheImplementation::clearLocalCache()
+libKF6GuiAddons.so.6:KLocalImageCacheImplementation::setPixmapCacheLimit(int)
 libKF6GuiAddons.so.6:KLocalImageCacheImplementation::setPixmapCaching(bool)
 libKF6GuiAddons.so.6:KLocalImageCacheImplementation::updateModifiedTime()
-libKF6GuiAddons.so.6:KLocalImageCacheImplementation::setPixmapCacheLimit(int)
-libKF6GuiAddons.so.6:KLocalImageCacheImplementation::KLocalImageCacheImplementation(unsigned int)
-libKF6GuiAddons.so.6:KLocalImageCacheImplementation::KLocalImageCacheImplementation(unsigned int)
 libKF6GuiAddons.so.6:KLocalImageCacheImplementation::~KLocalImageCacheImplementation()
-libKF6GuiAddons.so.6:KLocalImageCacheImplementation::~KLocalImageCacheImplementation()
-libKF6GuiAddons.so.6:KLocalImageCacheImplementation::~KLocalImageCacheImplementation()
-libKF6GuiAddons.so.6:KWordWrap::formatText(QFontMetrics&, QRect const&, int, QString const&, int)
-libKF6GuiAddons.so.6:KWordWrap::drawFadeoutText(QPainter*, int, int, int, QString const&)
-libKF6GuiAddons.so.6:KWordWrap::drawTruncateText(QPainter*, int, int, int, QString const&)
-libKF6GuiAddons.so.6:KWordWrap::KWordWrap(KWordWrap const&)
-libKF6GuiAddons.so.6:KWordWrap::KWordWrap(KWordWrap const&)
+libKF6GuiAddons.so.6:KModifierKeyInfo::KModifierKeyInfo(QObject*)
+libKF6GuiAddons.so.6:KModifierKeyInfo::keyAdded(Qt::Key)
+libKF6GuiAddons.so.6:KModifierKeyInfo::keyRemoved(Qt::Key)
+libKF6GuiAddons.so.6:KModifierKeyInfo::~KModifierKeyInfo()
+libKF6GuiAddons.so.6:KModifierKeyInfoProvider::KModifierKeyInfoProvider()
+libKF6GuiAddons.so.6:KModifierKeyInfoProvider::keyAdded(Qt::Key)
+libKF6GuiAddons.so.6:KModifierKeyInfoProvider::keyRemoved(Qt::Key)
+libKF6GuiAddons.so.6:KModifierKeyInfoProvider::~KModifierKeyInfoProvider()
+libKF6GuiAddons.so.6:KSystemClipboard::KSystemClipboard(QObject*)
+libKF6GuiAddons.so.6:KSystemClipboard::changed(QClipboard::Mode)
+libKF6GuiAddons.so.6:KSystemClipboard::instance()
+libKF6GuiAddons.so.6:KSystemClipboard::text(QClipboard::Mode)
+libKF6GuiAddons.so.6:KUrlHandler::KUrlHandler(QObject*)
 libKF6GuiAddons.so.6:KWordWrap::~KWordWrap()
-libKF6GuiAddons.so.6:KWordWrap::~KWordWrap()
-libKF6GuiAddons.so.6:KWordWrap::operator=(KWordWrap const&)
-libKF6GuiAddons.so.6:KUrlHandler::metaObject() const
-libKF6GuiAddons.so.6:KUrlHandler::concatDocsUrl(QUrl const&) const
-libKF6GuiAddons.so.6:KUrlHandler::openHelp(QUrl const&) const
-libKF6GuiAddons.so.6:KDateValidator::metaObject() const
-libKF6GuiAddons.so.6:KDateValidator::date(QString const&, QDate&) const
-libKF6GuiAddons.so.6:KDateValidator::fixup(QString&) const
-libKF6GuiAddons.so.6:KDateValidator::validate(QString&, int&) const
-libKF6GuiAddons.so.6:KColorCollection::description() const
-libKF6GuiAddons.so.6:KColorCollection::name(QColor const&) const
-libKF6GuiAddons.so.6:KColorCollection::name(int) const
-libKF6GuiAddons.so.6:KColorCollection::name() const
-libKF6GuiAddons.so.6:KColorCollection::color(int) const
-libKF6GuiAddons.so.6:KColorCollection::count() const
-libKF6GuiAddons.so.6:KColorCollection::editable() const
-libKF6GuiAddons.so.6:KColorCollection::findColor(QColor const&) const
-libKF6GuiAddons.so.6:KModifierKeyInfo::metaObject() const
-libKF6GuiAddons.so.6:KModifierKeyInfo::isKeyLocked(Qt::Key) const
-libKF6GuiAddons.so.6:KModifierKeyInfo::isKeyLatched(Qt::Key) const
-libKF6GuiAddons.so.6:KModifierKeyInfo::isKeyPressed(Qt::Key) const
-libKF6GuiAddons.so.6:KModifierKeyInfo::isButtonPressed(Qt::MouseButton) const
-libKF6GuiAddons.so.6:KModifierKeyInfo::knowsKey(Qt::Key) const
-libKF6GuiAddons.so.6:KModifierKeyInfo::knownKeys() const
-libKF6GuiAddons.so.6:KSystemClipboard::metaObject() const
-libKF6GuiAddons.so.6:KColorSchemeWatcher::metaObject() const
-libKF6GuiAddons.so.6:KColorSchemeWatcher::systemPreference() const
-libKF6GuiAddons.so.6:KKeySequenceRecorder::metaObject() const
-libKF6GuiAddons.so.6:KKeySequenceRecorder::isRecording() const
-libKF6GuiAddons.so.6:KKeySequenceRecorder::currentKeySequence() const
-libKF6GuiAddons.so.6:KKeySequenceRecorder::modifierOnlyAllowed() const
-libKF6GuiAddons.so.6:KKeySequenceRecorder::modifierlessAllowed() const
-libKF6GuiAddons.so.6:KKeySequenceRecorder::multiKeyShortcutsAllowed() const
-libKF6GuiAddons.so.6:KKeySequenceRecorder::window() const
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::metaObject() const
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::isKeyLocked(Qt::Key) const
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::isKeyLatched(Qt::Key) const
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::isKeyPressed(Qt::Key) const
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::isButtonPressed(Qt::MouseButton) const
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::knowsKey(Qt::Key) const
-libKF6GuiAddons.so.6:KModifierKeyInfoProvider::knownKeys() const
-libKF6GuiAddons.so.6:KCountryFlagEmojiIconEngine::key() const
-libKF6GuiAddons.so.6:KCountryFlagEmojiIconEngine::clone() const
-libKF6GuiAddons.so.6:KLocalImageCacheImplementation::pixmapCaching() const
-libKF6GuiAddons.so.6:KLocalImageCacheImplementation::serializeImage(QImage const&) const
-libKF6GuiAddons.so.6:KLocalImageCacheImplementation::findLocalPixmap(QString const&, QPixmap*) const
-libKF6GuiAddons.so.6:KLocalImageCacheImplementation::lastModifiedTime() const
-libKF6GuiAddons.so.6:KLocalImageCacheImplementation::pixmapCacheLimit() const
-libKF6GuiAddons.so.6:KLocalImageCacheImplementation::insertLocalPixmap(QString const&, QPixmap const&) const
-libKF6GuiAddons.so.6:KWordWrap::boundingRect() const
-libKF6GuiAddons.so.6:KWordWrap::wrappedString() const
-libKF6GuiAddons.so.6:KWordWrap::truncatedString(bool) const
-libKF6GuiAddons.so.6:KWordWrap::drawText(QPainter*, int, int, int) const
